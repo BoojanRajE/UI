@@ -1,0 +1,160 @@
+import { ValidationSchema } from './Context';
+
+export const initialValues: ValidationSchema = {
+  race: {
+    value: {},
+    error: '',
+    required: true,
+  },
+  ethnicity: {
+    value: {},
+    error: '',
+    required: true,
+  },
+  gender: {
+    value: {},
+    error: '',
+    required: true,
+  },
+  first_time_course: {
+    value: '',
+    error: '',
+    required: true,
+  },
+  status_in_school: {
+    value: '',
+    error: '',
+    required: true,
+  },
+  role_in_class: {
+    value: '',
+    error: '',
+    required: true,
+  },
+  units: {
+    value: [],
+    error: '',
+    required: true,
+  },
+  unitsState: {
+    value: [],
+    error: '',
+  },
+  messages: {
+    value: '',
+    error: '',
+    validate: 'select',
+    required: true,
+  },
+  password: {
+    value: '',
+    error: '',
+    validate: 'password',
+    required: true,
+  },
+  reEnterPassword: {
+    value: '',
+    error: '',
+    validate: 'password',
+    required: true,
+  },
+  communications: {
+    value: false,
+    error: '',
+    validate: 'checkbox',
+    helperText: 'Please accept our terms and conditions',
+  },
+  workshops: {
+    value: false,
+    error: '',
+    validate: 'checkbox',
+    helperText: 'Please accept our terms and conditions',
+  },
+  lasso: {
+    value: false,
+    error: '',
+    validate: 'checkbox',
+    helperText: 'Please accept our terms and conditions',
+  },
+  research: {
+    value: false,
+    error: '',
+    validate: 'checkbox',
+    helperText: 'Please accept our terms and conditions',
+  },
+  program: {
+    value: false,
+    error: '',
+    validate: 'checkbox',
+    helperText: 'Please accept our terms and conditions',
+  },
+  none: {
+    value: false,
+    error: '',
+    validate: 'checkbox',
+    helperText: 'Please accept our terms and conditions',
+  },
+  parent: {
+    value: '',
+    error: '',
+    required: true,
+    validate: 'text',
+  },
+  roles: {
+    value: {
+      president: false,
+      chancellor: false,
+      AssistantAssociateChancellor: false,
+      Provost: false,
+      AssistantAssociateProvost: false,
+      GenderqueerGendernonConforming: false,
+      Dean: false,
+      Chair: false,
+      Instructor: false,
+      Faculty: false,
+      Lecturer: false,
+      Staff: false,
+      Administrative: false,
+      Director: false,
+      AssistantAssociateDirector: false,
+    },
+    error: '',
+    validate: 'text',
+  },
+  unit: {
+    value: '',
+    error: '',
+    required: true,
+    validate: 'text',
+  },
+  unitLabel: {
+    value: '',
+    error: '',
+    required: true,
+    validate: 'text',
+  },
+  rolesId: {
+    value: [],
+    error: '',
+  },
+  genderAnotherIdentity: {
+    value: '',
+    error: '',
+    required: true,
+  },
+  ethnicityAnotherIdentity: {
+    value: '',
+    error: '',
+    required: true,
+  },
+  raceAnotherIdentity: {
+    value: '',
+    error: '',
+    required: true,
+  },
+  otherData: {
+    value: '',
+    error: '',
+    required: true,
+  },
+};
