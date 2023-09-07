@@ -60,7 +60,7 @@ RUN npm install
 COPY . ./
 RUN npm run build
 # Production
-FROM nginx:stable-alpine
+FROM nginxinc/nginx-unprivileged 
 COPY --from=build /app/build /usr/share/nginx/html
 COPY nginx/nginx.conf /etc/nginx/nginx.conf
 CMD ["nginx", "-g", "daemon off;"]
